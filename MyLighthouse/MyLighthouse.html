@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>My Lighthouse</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<script src="../js/main.js"></script>
+
+
+
+<!-- Not my own style sheet... -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+<!-- ...Not my own style sheet -->
+
+
+<link rel="stylesheet" href="../css/main.css"/>
+<link rel="stylesheet" href="slide.css"/>
+    </head>
+    <body>
+
+
+
+
+
+
+<!-- Verse 1 -->
+<section class="mySlides">
+<h1 class="h1CENTER w3-animate-top">In my wrestling and in my doubts</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">In my failures You won't walk out</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-bottom">Your great love will lead me through</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">You are the peace in my troubled sea whoa oh</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">You are the peace in my troubled sea</h1>
+</section>
+
+<!-- Verse 2 -->
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-bottom">In the silence You won't let go</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">In the questions Your truth will hold</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">Your great love will lead me through</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-bottom">You are the peace in my troubled sea whoa oh</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">You are the peace in my troubled sea</h1>
+</section>
+
+<!-- Chorus -->
+<section class="mySlides">
+    <h1 class="h1CENTER Chorus w3-animate-top">
+My Lighthouse my Lighthouse<br/>
+Shining in the darkness<br/>
+I will follow You oh<br/>
+My Lighthouse my Lighthouse<br/>
+I will trust the promise<br/>
+You will carry me safe to shore<br/>
+Safe to shore safe to shore safe to shore
+    </h1>
+</section>
+
+<!-- Verse 3 -->
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-bottom">I won't fear what tomorrow brings</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">With each morning I'll rise and sing</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-bottom">My God's love will lead me through</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">You are the peace in my troubled sea whoa oh</h1>
+</section>
+
+<section class="mySlides">
+    <h1 class="h1CENTER w3-animate-top">You are the peace in my troubled sea</h1>
+</section>
+
+<!-- Chorus -->
+<section class="mySlides">
+    <h1 class="h1CENTER Chorus w3-animate-top">
+My Lighthouse my Lighthouse<br/>
+Shining in the darkness<br/>
+I will follow You oh<br/>
+My Lighthouse my Lighthouse<br/>
+I will trust the promise<br/>
+You will carry me safe to shore<br/>
+Safe to shore safe to shore safe to shore
+    </h1>
+</section>
+
+<!-- Bridge -->
+<section class="mySlides">
+    <h1 class="h1CENTER Bridge w3-animate-top">
+Fire before us<br/>
+You're the brightest<br/>
+You will lead us<br/>
+Through the storms (hey)<br/>
+(REPEAT 3X)
+    </h1>
+</section>
+
+<!-- Chorus -->
+<section class="mySlides">
+    <h1 class="h1CENTER Chorus w3-animate-top">
+My Lighthouse my Lighthouse<br/>
+Shining in the darkness<br/>
+I will follow You oh<br/>
+My Lighthouse my Lighthouse<br/>
+I will trust the promise<br/>
+You will carry me safe to shore<br/>
+Safe to shore safe to shore safe to shore
+    </h1>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="controls">
+<button class="back" onclick="plusDivs(-1)">Back</button>
+  <button class="next" onclick="plusDivs(1)">Next</button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length} ;
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+</script>
+
+
+
+    </body>
+</html>
