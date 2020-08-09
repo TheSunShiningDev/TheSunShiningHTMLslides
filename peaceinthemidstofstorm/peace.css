@@ -1,0 +1,16 @@
+
+.MAINh1 {
+    color: white;
+    background-color: black;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.verseonMAIN {
+    margin-top: 250px;
+    font-size: 25px;
+    color: brown;
+    padding: 20px;
+   line-height: 1.0;
+}
